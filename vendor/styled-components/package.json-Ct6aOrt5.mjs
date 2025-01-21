@@ -1,9 +1,7 @@
-const e = "styled-components", t = "6.1.14", s = "CSS for the <Component> Age. Style components your way with speed, strong typing, and flexibility.", n = {
-  access: "public"
-}, o = "dist/index.d.ts", r = "dist/styled-components.cjs.js", p = "./dist/styled-components.esm.js", i = {
+const e = "styled-components", t = "6.1.13", s = "CSS for the <Component> Age. Style components your way with speed, strong typing, and flexibility.", n = "dist/index.d.ts", o = "dist/styled-components.cjs.js", r = "./dist/styled-components.esm.js", p = {
   "./dist/styled-components.cjs.js": "./dist/styled-components.browser.cjs.js",
   "./dist/styled-components.esm.js": "./dist/styled-components.browser.esm.js"
-}, c = !1, l = {
+}, c = !1, i = {
   generateErrors: "node scripts/generateErrorMap.js",
   prebuild: "rimraf dist && yarn run generateErrors",
   build: "rollup -c",
@@ -17,24 +15,24 @@ const e = "styled-components", t = "6.1.14", s = "CSS for the <Component> Age. S
   prettier: "prettier src --write",
   "prettier:check": "prettier src --check",
   prepublishOnly: "cp ../../README.md . && yarn run build"
-}, a = {
+}, l = {
   type: "git",
   url: "git+https://github.com/styled-components/styled-components.git"
-}, d = [
+}, a = [
   "LICENSE",
   "README.md",
   "dist",
   "native",
   "test-utils"
-], u = [
+], d = [
   "react",
   "css",
   "css-in-js",
   "styled-components",
   "styling"
-], y = "Glen Maddern", m = "MIT", b = {
+], u = "Glen Maddern", y = "MIT", m = {
   url: "https://github.com/styled-components/styled-components/issues"
-}, g = "https://styled-components.com", j = {
+}, b = "https://styled-components.com", g = {
   "@emotion/is-prop-valid": "1.2.2",
   "@emotion/unitless": "0.8.1",
   "@types/stylis": "4.2.5",
@@ -44,10 +42,10 @@ const e = "styled-components", t = "6.1.14", s = "CSS for the <Component> Age. S
   shallowequal: "1.1.0",
   stylis: "4.3.2",
   tslib: "2.6.2"
-}, h = {
+}, j = {
   react: ">= 16.8.0",
   "react-dom": ">= 16.8.0"
-}, f = {
+}, h = {
   "@babel/core": "7.24.5",
   "@babel/helper-module-imports": "7.24.3",
   "@babel/plugin-external-helpers": "7.24.1",
@@ -95,72 +93,70 @@ const e = "styled-components", t = "6.1.14", s = "CSS for the <Component> Age. S
   "stylis-plugin-rtl": "2.1.1",
   "ts-toolbelt": "9.6.0",
   typescript: "5.4.5"
-}, v = {
+}, f = {
   files: [
     {
       path: "./dist/styled-components.min.js",
       maxSize: "11.5kB"
     }
   ]
+}, v = {
+  type: "opencollective",
+  url: "https://opencollective.com/styled-components"
 }, w = {
   type: "opencollective",
   url: "https://opencollective.com/styled-components"
 }, E = {
-  type: "opencollective",
-  url: "https://opencollective.com/styled-components"
-}, x = {
   node: ">= 16"
-}, k = {
+}, x = {
   name: e,
   version: t,
   description: s,
-  publishConfig: n,
-  types: o,
-  main: r,
-  module: p,
+  types: n,
+  main: o,
+  module: r,
   "react-native": "native/dist/styled-components.native.cjs.js",
-  browser: i,
+  browser: p,
   sideEffects: c,
-  scripts: l,
-  repository: a,
-  files: d,
-  keywords: u,
-  author: y,
-  license: m,
-  bugs: b,
-  homepage: g,
-  dependencies: j,
-  peerDependencies: h,
-  devDependencies: f,
-  bundlewatch: v,
-  collective: w,
-  funding: E,
-  engines: x
+  scripts: i,
+  repository: l,
+  files: a,
+  keywords: d,
+  author: u,
+  license: y,
+  bugs: m,
+  homepage: b,
+  dependencies: g,
+  peerDependencies: j,
+  devDependencies: h,
+  bundlewatch: f,
+  collective: v,
+  funding: w,
+  engines: E
 };
 export {
-  y as author,
-  i as browser,
-  b as bugs,
-  v as bundlewatch,
-  w as collective,
-  k as default,
-  j as dependencies,
+  u as author,
+  p as browser,
+  m as bugs,
+  f as bundlewatch,
+  v as collective,
+  x as default,
+  g as dependencies,
   s as description,
-  f as devDependencies,
-  x as engines,
-  d as files,
-  E as funding,
-  g as homepage,
-  u as keywords,
-  m as license,
-  r as main,
-  p as module,
+  h as devDependencies,
+  E as engines,
+  a as files,
+  w as funding,
+  b as homepage,
+  d as keywords,
+  y as license,
+  o as main,
+  r as module,
   e as name,
-  h as peerDependencies,
-  n as publishConfig,
-  a as repository,
-  l as scripts,
+  j as peerDependencies,
+  l as repository,
+  i as scripts,
   c as sideEffects,
-  o as types,
+  n as types,
   t as version
 };
